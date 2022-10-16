@@ -12,7 +12,7 @@ renamed as (
 
     select
         CAST(id as integer) as emp_id,
-        `desc` as emp_desc
+        {{ adapter.quote('desc') }} as emp_desc
 
     from source
 
